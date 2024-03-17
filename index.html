@@ -13,42 +13,43 @@
         <h2>Online Calculator</h2>
         <div class="calculator-container">
             <div class="input-con">
-                <input type="text">
+                <input type="text" id="show">
             </div>
             <div class="btn-container">
                 <div>
-                    <button type="button">AC</button>
+                    <button type="button" onclick="allclear(' ')">AC</button>
                     <button type="button">+/-</button>
-                    <button type="button">%</button>
-                    <button type="button"> &#247;</button>
+                    <button type="button" onclick="percentage('%')">%</button>
+                    <button type="button" onclick="divide('&#247;')"> &#247;</button>
                 </div>
                 <div>
-                    <button type="button">7</button>
-                    <button type="button">8</button>
-                    <button type="button">9</button>
-                    <button type="button">X</button>
+                    <button type="button" onclick="seven('7')">7</button>
+                    <button type="button" onclick="eight('8')">8</button>
+                    <button type="button" onclick="nine('9')">9</button>
+                    <button type="button" onclick="ex('*')">X</button>
                 </div>
                 <div>
-                    <button type="button">4</button>
-                    <button type="button">5</button>
-                    <button type="button">6</button>
-                    <button type="button">-</button>
+                    <button type="button" onclick="four('4')">4</button>
+                    <button type="button" onclick="five('5')">5</button>
+                    <button type="button" onclick="six('6')">6</button>
+                    <button type="button" onclick="minus('-')">-</button>
                 </div>
                 <div>
-                    <button type="button">1</button>
-                    <button type="button">2</button>
-                    <button type="button">3</button>
-                    <button type="button"> +</button>
+                    <button type="button" onclick="ak('1')">1</button>
+                    <button type="button" onclick="two('2')">2</button>
+                    <button type="button" onclick="tin('3')">3</button>
+                    <button type="button" onclick="plus('+')"> +</button>
                 </div>
                 <div>
-                    <button type="button">0</button>
-                    <button type="button">00</button>
-                    <button type="button">.</button>
-                    <button type="button">=</button>
+                    <button type="button" onclick="zero('0')">0</button>
+                    <button type="button" onclick="double_zero('00')">00</button>
+                    <button type="button" onclick="dot('.')">.</button>
+                    <button type="button" onclick="equal('=')">=</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
